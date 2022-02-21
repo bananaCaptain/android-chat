@@ -67,22 +67,22 @@ public abstract class WfcBaseNoToolbarActivity extends AppCompatActivity {
         hideInputMethod();
     }
 
-    public boolean checkPermission(String permission) {
-        return checkPermission(new String[]{permission});
-    }
-
-    public boolean checkPermission(String[] permissions) {
-        boolean granted = true;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            for (String permission : permissions) {
-                granted = checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
-                if (!granted) {
-                    break;
-                }
-            }
-        }
-        return granted;
-    }
+//    public boolean checkPermission(String permission) {
+//        return checkPermission(new String[]{permission});
+//    }
+//
+//    public boolean checkPermission(String[] permissions) {
+//        boolean granted = true;
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+//            for (String permission : permissions) {
+//                granted = checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
+//                if (!granted) {
+//                    break;
+//                }
+//            }
+//        }
+//        return granted;
+//    }
 
     /**
      * Changes the System Bar Theme.
